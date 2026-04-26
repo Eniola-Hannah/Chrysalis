@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Chrysalis - Premium financial Literacy and investment Onboarding Platform">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Chrysalis - Financial Literacy &amp; Investment Onboarding Platform</title>
+
+    <link rel="icon" href="img/core-img/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/custom-override.css">
+</head>
+
+<body>
+    <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+    </div>
+
+    <header class="ve-header" id="ve-sticky">
+        <div class="container-fluid ve-nav-wrap">
+            <div class="ve-logo">
+                <a href="home.html">
+                    <span class="ve-logo-icon">C</span>
+                    <span class="ve-logo-text">Chry<strong>salis</strong></span>
+                </a>
+            </div>
+
+            <nav class="ve-nav">
+                <ul>
+                    <li><a href="home.html">Dashboard</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="post.html">Learning Modules</a></li>
+                    <li><a href="wallet.html" class="active">Paper Trading</a></li>
+                    <li><a href="chrysalis-ai.html">Chrysalis AI</a></li>
+                </ul>
+            </nav>
+
+            <div class="ve-nav-cta">
+                <a href="index.html" class="ve-cta-btn"> Logout <i class="fa fa-arrow-right"></i></a>
+            </div>
+
+            <button class="ve-toggler" id="ve-toggle">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <div class="pt-dashboard">
+        
+        <aside class="pt-sidebar">
+            <div>
+                <ul class="pt-sidebar-nav">
+                    <li><a href="wallet.html"><i class="fa fa-wallet"></i> Wallet</a></li>
+                    <li><a href="portfolio.html"><i class="fa fa-chart-pie"></i> Portfolio</a></li>
+                    <li><a href="history.html"><i class="fa fa-history"></i> History</a></li>
+                    <li><a href="invest.html" class="active"><i class="fa fa-chart-line"></i> Invest</a></li>
+                </ul>
+            </div>
+
+            <div class="pt-sidebar-bottom">
+                <div class="pt-user-profile">
+                    <div class="pt-user-avatar">EH</div>
+                    <div class="pt-user-info">
+                        <span class="pt-user-name">Eniola Hannah</span>
+                        <span class="pt-user-role">Student Account</span>
+                    </div>
+                </div>
+                <a href="#" class="pt-settings-link"><i class="fa fa-cog"></i> Settings</a>
+            </div>
+        </aside>
+
+        <main class="pt-main">
+            
+            <header class="pt-header">
+                <h1>Welcome, Eniola Hannah</h1>
+                <p>Paper Trading Simulation Environment</p>
+            </header>
+
+            <div id="dynamic-view">
+                <div class="pt-card">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px;">
+                        <div>
+                            <h2 class="pt-card-title" style="margin-bottom: 5px;">Recommended Stocks (NGX)</h2>
+                            <span style="color: #94A3B8; font-size: 14px;">Equities recommended for your simulation profile.</span>
+                        </div>
+                        <button style="background: rgba(16, 185, 129, 0.2); color: #10B981; border: none; padding: 8px 16px; border-radius: 20px; font-weight: bold; cursor: pointer;">See all</button>
+                    </div>
+
+                    <table class="pt-table">
+                        <thead>
+                            <tr>
+                                <th>Stock</th>
+                                <th>Stock Price</th>
+                                <th>% Change</th>
+                                <th>Upside Potential</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>ACCESSCORP</strong><br>
+                                    <span style="color: #94A3B8; font-size: 12px;">Access Holdings Plc</span>
+                                </td>
+                                <td>N/A</td>
+                                <td>0.00%</td>
+                                <td style="color: #10B981;">↑ +62.60%</td>
+                                <td><button class="pt-btn pt-btn-buy">Buy</button></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>UBA</strong><br>
+                                    <span style="color: #94A3B8; font-size: 12px;">United Bank For Africa Plc</span>
+                                </td>
+                                <td>N/A</td>
+                                <td>0.00%</td>
+                                <td style="color: #10B981;">↑ +31.50%</td>
+                                <td><button class="pt-btn pt-btn-buy">Buy</button></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>BUAFOODS</strong><br>
+                                    <span style="color: #94A3B8; font-size: 12px;">Bua Foods Plc</span>
+                                </td>
+                                <td>N/A</td>
+                                <td>0.00%</td>
+                                <td style="color: #EF4444;">↓ -38.70%</td>
+                                <td><button class="pt-btn pt-btn-sell">Sell</button></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>DANGSUGAR</strong><br>
+                                    <span style="color: #94A3B8; font-size: 12px;">Dangote Sugar Refinery Plc</span>
+                                </td>
+                                <td>N/A</td>
+                                <td>0.00%</td>
+                                <td style="color: #EF4444;">↓ -47.10%</td>
+                                <td><button class="pt-btn pt-btn-sell">Sell</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div> 
+        </main>
+    </div>
+
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <script src="js/bootstrap/popper.min.js"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <script src="js/plugins/plugins.js"></script>
+    <script src="js/active.js"></script>
+    <script src="js/vaultedge.js"></script>
+</body>
+</html>
