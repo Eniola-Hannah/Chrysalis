@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Chrysalis - Premium financial Literacy and investment Onboarding Platform">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Chrysalis - Financial Literacy &amp; Investment Onboarding Platform</title>
+
+    <link rel="icon" href="img/core-img/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/custom-override.css">
+</head>
+
+<body>
+    <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+    </div>
+
+    <header class="ve-header" id="ve-sticky">
+        <div class="container-fluid ve-nav-wrap">
+            <div class="ve-logo">
+                <a href="home.html">
+                    <span class="ve-logo-icon">C</span>
+                    <span class="ve-logo-text">Chry<strong>salis</strong></span>
+                </a>
+            </div>
+
+            <nav class="ve-nav">
+                <ul>
+                    <li><a href="home.html">Dashboard</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="post.html">Learning Modules</a></li>
+                    <li><a href="wallet.html" class="active">Paper Trading</a></li>
+                    <li><a href="chrysalis-ai.html">Chrysalis AI</a></li>
+                </ul>
+            </nav>
+
+            <div class="ve-nav-cta">
+                <a href="index.html" class="ve-cta-btn"> Logout <i class="fa fa-arrow-right"></i></a>
+            </div>
+
+            <button class="ve-toggler" id="ve-toggle">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <div class="pt-dashboard">
+        
+        <aside class="pt-sidebar">
+            <div>
+                <ul class="pt-sidebar-nav">
+                    <li><a href="wallet.html" class="active"><i class="fa fa-wallet"></i> Wallet</a></li>
+                    <li><a href="portfolio.html"><i class="fa fa-chart-pie"></i> Portfolio</a></li>
+                    <li><a href="history.html"><i class="fa fa-history"></i> History</a></li>
+                    <li><a href="invest.html"><i class="fa fa-chart-line"></i> Invest</a></li>
+                </ul>
+            </div>
+
+            <div class="pt-sidebar-bottom">
+                <div class="pt-user-profile">
+                    <div class="pt-user-avatar">EH</div>
+                    <div class="pt-user-info">
+                        <span class="pt-user-name">Eniola Hannah</span>
+                        <span class="pt-user-role">Student Account</span>
+                    </div>
+                </div>
+                <a href="#" class="pt-settings-link"><i class="fa fa-cog"></i> Settings</a>
+            </div>
+        </aside>
+
+        <main class="pt-main">
+            
+            <header class="pt-header">
+                <h1>Welcome, Eniola Hannah</h1>
+                <p>Paper Trading Simulation Environment</p>
+            </header>
+
+            <div id="dynamic-view">
+                <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 20px;">
+                    
+                    <div>
+                        <div class="pt-card">
+                            <h2 class="pt-card-title">Naira Wallet Balance</h2>
+                            <div class="pt-value-large">₦67,677.00</div>
+                            <span class="status-pill status-success">Virtual Account</span>
+                        </div>
+
+                        <div class="pt-card">
+                            <h2 class="pt-card-title">Recent Transactions</h2>
+                            <table class="pt-table">
+                                <thead>
+                                    <tr>
+                                        <th>Transaction</th>
+                                        <th>Amount</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Deposit<br><span style="color:#94A3B8; font-size:12px;">2026-04-26 09:00 AM</span></td>
+                                        <td>₦25,000.00</td>
+                                        <td><span class="status-pill status-success">Successful</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Deposit<br><span style="color:#94A3B8; font-size:12px;">2026-04-25 14:30 PM</span></td>
+                                        <td>₦42,677.00</td>
+                                        <td><span class="status-pill status-success">Successful</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="pt-card">
+                            <h2 class="pt-card-title">Balance Summary</h2>
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                                <span style="color: #94A3B8;">Total Balance</span>
+                                <strong>₦67,677.00</strong>
+                            </div>
+                            <div style="display: flex; justify-content: space-between;">
+                                <span style="color: #94A3B8;">Available To Trade</span>
+                                <strong>₦67,677.00</strong>
+                            </div>
+                        </div>
+
+                        <div class="pt-card" style="text-align: center;">
+                            <div style="display: flex; background: #0B1120; border-radius: 8px; margin-bottom: 20px;">
+                                <button style="flex: 1; padding: 10px; background: #334155; border: none; color: white; border-radius: 8px;">Deposit</button>
+                                <button style="flex: 1; padding: 10px; background: transparent; border: none; color: #94A3B8;">Withdraw</button>
+                            </div>
+                            <div class="pt-value-large">₦0</div>
+                            <button class="pt-btn" style="width: 100%; background-color: #334155; color: #FFFFFF; padding: 12px;">Next</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div> </main>
+    </div>
+
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <script src="js/bootstrap/popper.min.js"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <script src="js/plugins/plugins.js"></script>
+    <script src="js/active.js"></script>
+    <script src="js/vaultedge.js"></script>
+</body>
+</html>
