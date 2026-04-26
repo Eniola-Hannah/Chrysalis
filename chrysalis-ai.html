@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Chrysalis - Premium financial Literacy and investment Onboarding Platform">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Chrysalis - Financial Literacy &amp; Investment Onboarding Platform</title>
+
+    <link rel="icon" href="img/core-img/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/custom-override.css">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+    </div>
+
+    <!-- ===== NAVBAR (single dark bar, logo left, nav center, CTA right) ===== -->
+    <header class="ve-header" id="ve-sticky">
+        <div class="container-fluid ve-nav-wrap">
+            <!-- Logo -->
+            <div class="ve-logo">
+                <a href="home.html">
+                    <span class="ve-logo-icon">C</span>
+                    <span class="ve-logo-text">Chry<strong>salis</strong></span>
+                </a>
+            </div>
+
+            <!-- Nav Links -->
+            <nav class="ve-nav">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="post.html">Learning Modules</a></li>
+                    <li><a href="#">Paper Trading</a></li>
+                    <li><a href="chrysalis-ai.html" class="active">Chrysalis AI</a></li>
+                </ul>
+            </nav>
+
+            <!-- CTA -->
+            <div class="ve-nav-cta">
+                <a href="index.html" class="ve-cta-btn"> Logout <i class="fa fa-arrow-right"></i></a>
+            </div>
+
+            <!-- Mobile Toggle -->
+            <button class="ve-toggler" id="ve-toggle">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="ve-mobile-menu" id="ve-mobile-menu">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="post.html">Learning Modules</a></li>
+                <li><a href="#">Paper Trading</a></li>
+                <li><a href="chrysalis-ai.html" class="active">Chrysalis AI</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+    <div class="chrysalis-app-layout">
+    
+        <aside class="chrysalis-sidebar">
+            <div class="sidebar-top">
+                <div class="sidebar-brand">
+                    <span class="ve-logo-text">Chry<strong>salis</strong></span>
+                </div>
+                
+                <nav class="sidebar-nav">
+                    <a href="#" class="nav-item new-chat-btn">
+                        <i class="fa fa-plus-circle"></i> New Chat
+                    </a>
+                    <a href="#" class="nav-item">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                    <a href="#" class="nav-item">
+                        <i class="fa fa-history"></i> History <span class="arrow-right">></span>
+                    </a>
+                </nav>
+            </div>
+
+            <div class="sidebar-bottom">
+                <div class="user-profile-block">
+                    <div class="user-avatar">EH</div>
+                    <span class="user-name">Eniola Hannah</span>
+                </div>
+                <a href="#" class="settings-link">
+                    <i class="fa fa-cog"></i> Settings
+                </a>
+            </div>
+        </aside>
+
+        <main class="chrysalis-chat-area">
+            
+            <header class="chat-header">
+                <div class="model-selector-wrapper">
+                    <span class="model-label">Model</span>
+                    <select class="model-selector">
+                        <option>Chrysalis-2.0</option>
+                        <option>Chrysalis-Legacy</option>
+                    </select>
+                </div>
+            </header>
+
+            <div class="chat-center-stage">
+                <h1 class="center-hero-logo">
+                    <span class="ve-logo-text">Chry<strong>salis</strong></span>
+                </h1>
+            </div>
+
+            <div class="chat-input-section">
+                <div class="input-wrapper">
+                    <input type="text" placeholder="Message your Agentic AI Mentor..." id="aiPromptInput" autocomplete="off">
+                    <button class="send-btn" id="sendPromptBtn">
+                        <i class="fa fa-paper-plane"></i>
+                    </button>
+                </div>
+                <p class="ai-disclaimer">
+                    Chrysalis AI simulates market guidance for educational purposes. It does not provide real financial advice.
+                </p>
+            </div>
+            
+        </main>
+    </div>
+
+
+    <!-- Scripts -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <script src="js/bootstrap/popper.min.js"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <script src="js/plugins/plugins.js"></script>
+    <script src="js/active.js"></script>
+    <script src="js/vaultedge.js"></script>
+</body>
+</html>
